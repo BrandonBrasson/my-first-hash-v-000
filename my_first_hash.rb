@@ -1,7 +1,7 @@
-def my_hash
+def my_hash(n)
   # use the literal constructor to set the variable, my_hash, equal to a hash with key/value pairs of your choice.
-    my_hash = {["name" => "Brandon", "age" => 21, "location" => "FL"]}
-    puts my_hash[]
+    n = {["name" => "Brandon", "age" => 21, "location" => "FL"]}
+  
 end
 
 
