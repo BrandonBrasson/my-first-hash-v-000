@@ -1,7 +1,7 @@
 def my_hash(hash)
   # use the literal constructor to set the variable, my_hash, equal to a hash with key/value pairs of your choice.
-    Hash.new { |hash, key| hash[key] = "name" => "Brandon", "age" => 21 }
-
+    Hash = {["name" => "Brandon", "age" => 21, "location" => "FL"]}
+     n = my_hash
 end
 
 
