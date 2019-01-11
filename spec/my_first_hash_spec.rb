@@ -1,8 +1,7 @@
 require_relative 'spec_helper'
 require_relative '../my_first_hash.rb'
 
-
-puts context "Challenge I: Instantiating Hashes" do
+ context "Challenge I: Instantiating Hashes" do
   describe "#my_hash" do
     it "uses the literal constructor to create a hash that contains key/value pairs" do
       expect(my_hash).to be_a(Hash)
@@ -11,7 +10,7 @@ puts context "Challenge I: Instantiating Hashes" do
   end
 end
 
-puts context "Challenge II: Hash with Data" do
+ context "Challenge II: Hash with Data" do
   describe "#shipping_manifest" do
     it "returns a hash with key/value pairs describing old-timey items" do
       expect(shipping_manifest.keys).to match_array(["whale bone corsets", "oil paintings", "porcelain vases"])
@@ -20,7 +19,7 @@ puts context "Challenge II: Hash with Data" do
   end
 end
 
-puts context "Challenge III: Retrieving Data" do
+ context "Challenge III: Retrieving Data" do
   describe "#retrieval" do
     it "operates on the shipping_manifest hash to return the value of the 'oil paintings' key" do
       expect(retrieval).to eq(3)
@@ -28,7 +27,7 @@ puts context "Challenge III: Retrieving Data" do
   end
 end
 
-puts context "Challenge IV: Adding Data" do
+ context "Challenge IV: Adding Data" do
   describe "#adding" do
     it "operates on the shipping_manifest hash to add a key/value pair" do
       expect(adding).to eq({
